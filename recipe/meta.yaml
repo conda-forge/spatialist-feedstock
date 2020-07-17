@@ -1,5 +1,5 @@
 {% set name = "spatialist" %}
-{% set version = "0.5" %}
+{% set version = "0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 89c56e987b79b5b904eb5d22482f3addf0cd3c60bda9910680ebc478b10520ee
+  sha256: b28b1d21bd509475d53adccf08e758fe33a54d281240d140e52770392c263dac
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - numpy
     - tblib
     - pyyaml
-    - gdal >=2.1
+    - gdal >=2.4
     - sqlite
     - libspatialite
     - setuptools_scm
@@ -48,7 +48,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'A Python module for spatial data handling'
+  summary: A Python module for spatial data handling
 
   description: |
     This package offers functionalities for user-friendly geo data processing using GDAL and OGR.
