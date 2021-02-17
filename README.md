@@ -5,9 +5,13 @@ Home: https://github.com/johntruckenbrodt/spatialist
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spatialist-feedstock/blob/master/LICENSE.txt)
 
 Summary: A Python module for spatial data handling
+
+Development: https://github.com/johntruckenbrodt/spatialist
+
+Documentation: https://spatialist.readthedocs.io
 
 This package offers functionalities for user-friendly geo data processing using GDAL and OGR.
 
