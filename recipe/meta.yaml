@@ -16,13 +16,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.0
     - pip
     - setuptools_scm
   run:
-    - python
+    - python >=3.0
     - progressbar2
-    - jupyter
     - matplotlib-base
     - pathos >=0.2
     - numpy
@@ -32,6 +31,7 @@ requirements:
     - sqlite
     - libspatialite >5.0.0
     - setuptools_scm
+    - dill
 
 test:
   source_files:
