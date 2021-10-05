@@ -1,5 +1,5 @@
 {% set name = "spatialist" %}
-{% set version = "0.8" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17fe37133be85d23979d73bc8d0ccab46883a15de6b13062b8a6626e00c91d20
+  sha256: e7f9eba62b5734c363bb0ab98f6d7998773e77a6aa1f14cd0ccba8fd440adec3
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -27,7 +27,7 @@ requirements:
     - numpy
     - tblib
     - pyyaml
-    - gdal >=2.4, <3.3.2
+    - gdal >=2.4
     - sqlite
     - libspatialite >5.0.0
     - setuptools_scm
