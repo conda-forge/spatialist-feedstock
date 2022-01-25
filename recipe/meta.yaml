@@ -29,7 +29,7 @@ requirements:
     - pyyaml
     - gdal >=2.4
     - sqlite
-    - libspatialite >5.0.1
+    - libspatialite >5.0.0
     - setuptools_scm
     - dill
 
