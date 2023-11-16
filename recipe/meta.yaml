@@ -1,5 +1,5 @@
 {% set name = "spatialist" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6704eeafbfc238676514c4792c0568b60dd93feb79fecdedff700eec0df86f59
+  sha256: 6f638d29bb1fddeb85e07b21cd7cde32473a3965b2ec7fba7e0994a82419849a
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.0
+    - python >=3.5
     - pip
     - setuptools_scm
   run:
-    - python >=3.0
+    - python >=3.5
     - progressbar2
     - matplotlib-base
     - pathos >=0.2
