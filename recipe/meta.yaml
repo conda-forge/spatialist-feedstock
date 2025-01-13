@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4f50652b0d26785b6e1c26a55f1f2f18fed7dd2483f734cec23e8b0169608951
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - progressbar2
     - matplotlib-base
     - pathos >=0.2
@@ -39,6 +39,7 @@ test:
     - spatialist/tests
   requires:
     - pytest
+    - python {{ python_min }}
   imports:
     - spatialist
   commands:
