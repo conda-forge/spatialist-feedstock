@@ -21,21 +21,21 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >={{ python_min }}
-    - progressbar2
-    - matplotlib-base
-    - pathos >=0.2
-    - numpy <2.0
-    - tblib
-    - pyyaml
-    - gdal >=2.4
-    - sqlite
-    - libspatialite >5.0.0
-    - setuptools_scm
     - dill
-    - shapely
-    - pandas
+    - gdal >=2.4
     - geopandas
+    - libspatialite >5.0.0
+    - matplotlib-base
+    - numpy <2.0
+    - pandas
+    - pathos >=0.2
+    - progressbar2
+    - python >={{ python_min }}
+    - pyyaml
+    - setuptools_scm
+    - shapely
+    - sqlite
+    - tblib
 
 test:
   source_files:
