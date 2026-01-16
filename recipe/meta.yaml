@@ -39,12 +39,12 @@ requirements:
 
 test:
   requires:
-    - pytest
+    - pip
     - python {{ python_min }}
   imports:
     - spatialist
   commands:
-    - pytest
+    - pip check
 
 about:
   home: https://github.com/johntruckenbrodt/spatialist
