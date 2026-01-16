@@ -38,8 +38,6 @@ requirements:
     - tblib
 
 test:
-  source_files:
-    - spatialist/tests
   requires:
     - pytest
     - python {{ python_min }}
