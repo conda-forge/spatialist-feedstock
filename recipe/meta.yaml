@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.11
     - pip
     - setuptools
     - setuptools_scm
@@ -30,7 +30,7 @@ requirements:
     - pandas
     - pathos >=0.2
     - progressbar2
-    - python >={{ python_min }}
+    - python >=3.11
     - pyyaml
     - setuptools_scm
     - shapely
@@ -40,7 +40,7 @@ requirements:
 test:
   requires:
     - pip
-    - python {{ python_min }}
+    - python >=3.11
   imports:
     - spatialist
   commands:
