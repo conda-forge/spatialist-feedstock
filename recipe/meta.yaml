@@ -1,5 +1,5 @@
 {% set name = "spatialist" %}
-{% set version = "0.20.0" %}
+{% set version = "0.20.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 71f4765a13d7862797bb04545e6e5da36d30c9d4b7dedb458892740f2eae3e86
+  sha256: b1a1e330d29eb8d706a33efaf694d2e85a181b0030d3921705195e48e5befe3f
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - dill
     - gdal >=2.4
     - geopandas
-    - libspatialite >5.0.0
+    - libspatialite >=5.1.0
     - matplotlib-base
     - numpy
     - pandas
