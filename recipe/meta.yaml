@@ -1,5 +1,5 @@
 {% set name = "spatialist" %}
-{% set version = "0.20.1" %}
+{% set version = "0.20.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b1a1e330d29eb8d706a33efaf694d2e85a181b0030d3921705195e48e5befe3f
+  sha256: 957fd1f149d03d26c6c61b970dc28f0e90c486db2757404b573da776fc598fa1
 
 build:
   noarch: python
